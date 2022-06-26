@@ -1,0 +1,95 @@
+body{
+    background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.719), rgba(65, 56, 8, 0.774)), url(./Images/digi.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#heading{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+}
+
+#container{
+    
+    border-style: none;
+    background-color: #20468A;
+    color: white;
+    width: 550px;
+    height: 500px;
+    margin-left: 150px;
+    margin-top: 200px;
+    text-align: center;
+    align-items: center;
+    border-radius: 100px;
+    -webkit-box-shadow: 13px 29px 79px -1px rgba(255, 255, 255, 0.63);
+    -moz-box-shadow: 13px 29px 79px -1px rgba(255, 255, 255, 0.63);
+    box-shadow: 13px 29px 79px -1px rgba(255, 255, 255, 0.63);
+    background: transparent;
+}
+
+
+#clock {
+
+font-size: 70px;
+
+}
+#colon{
+    animation: blink 2s infinite;
+}
+@keyframes blink {
+	0%   { opacity: 0; }
+	30%  { opacity: 1; }
+	50%  { opacity: 0; }
+	70%  { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+#AM_PM{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 11px;
+    
+}
+
+
+
+#Start, #Stop{
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    border-color: black;
+    border-style: none;
+    margin-left:  10px;
+    cursor: pointer;
+}
+
+#Start:hover{
+    background-color:rgba(61, 136, 255 , 0.766);
+    color: white;
+    transition: 1s all;
+
+}
+
+#Stop:hover{
+    background-color:rgba(61, 136, 255 , 0.766);
+    color: white;
+    transition: 1s all;
+
+}
+#Dates{
+
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+
+}
