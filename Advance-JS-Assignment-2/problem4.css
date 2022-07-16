@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    padding: 10px;
+    flex-direction: column;
+    background-color: black;
+}
+.container .header {
+    margin-bottom: 5px;
+}
+.container .header .text-field {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25px;
+    color: orange;
+}
+.container .header .answer {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+}
+.container table, .container table td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-weight: 600;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+.container table td {
+    padding: 20px 40px;
+    text-align: center;
+}
+.container table .nums {
+    background-color: rgb(68, 66, 66);
+}
+.container table .ops {
+    background-color: grey;
+}
+.container table .ac {
+    background-color: brown;
+}
+.container table .equals {
+    background-color: rgb(48, 48, 156);
+}
+.container table .nums:hover {
+    background-color: rgb(95, 90, 90);
+}
+.container table .ops:hover {
+    background-color: rgb(99, 92, 92);
+}
+.container table .ac:hover {
+    background-color: rgb(196, 55, 55);
+}
+.container table .equals:hover {
+    background-color: rgb(73, 73, 192);
+}

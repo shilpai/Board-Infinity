@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="problem2.css">
+    <title>TIP CALCULATOR</title>
+</head>
+<body>
+    <div class="container">
+    <h3>Tip Calculator</h3>
+    <div class="inp"> 
+    <span class="bg">$</span>
+    <input type="number" id="num" placeholder="Enter Amount">
+</div>
+<div class="inp">
+    <label for="tip">Tip</label>
+    <input type="range" name="range" id="range" min="0" max="100" value="0" step="1">
+<span class="ran"></span>
+</div><br/>
+     <center><h4>Results</h4></center>          
+<div>
+    <div class="inp">
+        <div class="tip">
+            <span class="border">Tip Amount :</span>
+           <span class="tipamt"></span>
+        </div>
+</div>
+<br/>
+    <div>
+        <div class="amt">
+            <span class="border" >Total Bill with Tip :</span>
+            <span class="bill"></span>
+        </div>
+    </div>
+    </div>
+</div>
+<script>
+    const tip=document.getElementById("range");
+    const tit=document.querySelector(".ran");
+
+    const tipamt=document.querySelector(".tipamt");
+    const amt=document.querySelector(".bill");
+
+    tip.addEventListener("input", function(e){
+        let inp=document.getElementById("num").value;
+        let tipam=e.target.value;
+
+        if(inp === " "){
+            alert("Amount Required");
+        }else{
+            tit.textContent= `${tipam}%`;
+            tipamt.textContent=`${tipam}%`;
+            amt.textContent=tipCalc(parseFloat(inp), parseFloat( tipam));
+        }
+    })
+
+    function tipCalc(amt,tip){
+        let tipc=(amt * tip / 100);
+        return tipc+amt;
+    }
+</script>
+</body>
+</html>
