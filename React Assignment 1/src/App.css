@@ -1,0 +1,16 @@
+.main-btn {
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  left: 0;
+  margin: 20px;
+}
+.main-btns {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}

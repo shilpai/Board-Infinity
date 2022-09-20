@@ -1,0 +1,120 @@
+.showcase h2 {
+    text-align: center;
+    padding: 10px 0px;
+}
+.showcase .show-cards {
+    padding: 20px 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 30px;
+}
+.showcase .show-cards .show-card {
+    cursor: pointer;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 3px 3px 10px #888888;
+}
+.showcase .show-cards .show-card .show-card-img {
+    height: 200px;
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.showcase .show-cards .show-card p {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 0px;
+}
+.frame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.589);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: modal 0.5s ease-in-out;
+}
+@keyframes modal {
+    from {
+        transform: translateX(-100vw);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+.frame img {
+    height: 80vh;
+    width: 60vw;
+    border-radius: 5px;
+}
+.frame i {
+    cursor: pointer;
+    position: absolute;
+    top: 10vh;
+    right: 20vw;
+    margin: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .showcase .show-cards {
+        grid-template-columns: auto auto;
+    }
+    .frame img {
+        height: 60vh;
+    }
+    .frame i {
+        top: 20vh;
+        right: 20vw;
+        margin: 10px;
+        font-size: 18px;
+        padding: 5px;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .showcase .show-cards {
+        grid-template-columns: auto;
+    }
+    .frame img {
+        height: 50vh;
+        width: 80vw;
+    }
+    .frame i {
+        top: 25vh;
+        right: 10vw;
+        margin: 10px;
+        font-size: 15px;
+        padding: 5px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .showcase .show-cards {
+        grid-template-columns: auto;
+    }
+    .showcase .show-cards .show-card {
+        width: 250px;
+    }
+    .showcase .show-cards .show-card .show-card-img {
+        height: 170px;
+    }
+    .frame img {
+        height: 40vh;
+        width: 100%;
+    }
+    .frame i {
+        top: 30vh;
+        right: 0;
+        margin: 10px;
+        font-size: 15px;
+        padding: 5px;
+    }
+}
