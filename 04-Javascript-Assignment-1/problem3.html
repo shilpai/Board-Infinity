@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID CARD GENERATOR</title>
+    <link rel="stylesheet" href="./problem3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="heading">ID CARD GENERATOR</div>
+        <div id="flex">
+            <div id="container2">
+                <div id="detail">Student Details</div>
+                <div id="name">Name:</div>
+                <i class="fa fa-user"></i>
+                <input type="text" id="namebox">
+                <div id="college">College Name:</div>
+                <i class="fa fa-university"></i>
+                <input type="text" id="collegenamebox">
+                <div id="location">Location:</div>
+                <i class="fa fa-map-marker"></i>
+                <input type="text" id="locationbox"> <br>
+                <input type="file" id="filename"> <br>
+                <img src="./Images/id.png" alt="" id="previewimg"><br>
+
+                <button id="generatecard" onclick="generate_card()">Generate Card</button>
+            </div>
+
+            <div id="container3">
+                <div class="heading2">Generated Card</div>
+                <div class="flex2">
+                    <img src="./Images/id.png" alt="" id="image">
+                    <div id="container4">
+                        <div id="name12"> Name: &nbsp;<span id="name1"></span> </div>
+                        <div id="college_name12"> College: &nbsp;<span id="college_name"></span> </div>
+                        <div id="location_name12"> Location: &nbsp;<span id="location_name"></span> </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="./problem3.js"></script>
+</body>
+
+</html>

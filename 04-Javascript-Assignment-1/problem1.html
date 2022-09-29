@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIGITAL CLOCK</title>
+    <link rel="stylesheet" href="./problem1.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  </head>
+  <body>
+    <div id="container">
+      <h3 id="heading">DIGITAL CLOCK</h3>
+
+      <div id="clock">
+       <span id="hour">00</span> 
+       <span id="colon">:</span>
+       <span id="minutes">00</span>
+       <span id="colon">:</span>
+       <span id="second">00</span> <br>
+       <span id="AM_PM">AM/PM</span> 
+      </div>
+      <div id="Dates">
+        <span id="date">date</span>
+        <span id="month">month</span>
+        <span id="year">year</span>
+      </div>
+      <button id="Start" onclick="setInterval(startButton, 1000)" value="start">Start</button>
+      <button id="Stop" onclick="stopButton()">Stop</button>
+    </div>
+
+    
+
+
+    <script src="./problem1.js"></script>
+  </body>
+</html>

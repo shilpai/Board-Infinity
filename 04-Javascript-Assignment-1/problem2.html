@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUOTE GENERATOR</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+    />
+  </head>
+  <body class="bg-blue-800">
+    <div class="grid justify-items-center font-serif">
+      <div id="span" class="sm:mt-40 mt-10 text-2xl mb-5 justify-center">
+        <span> Let's start our </span>
+        <span id="time_of_day">night</span>
+        <span>with a new quote</span>
+      </div>
+      <div
+        id="container"
+        class="
+          md:w-4/5
+          lg:h-80 xl:w-2/6
+          border-4
+          p-5
+          bg-white
+          rounded-x1
+          border-black
+        "
+      >
+        <h2 id="quote_list" class="sm:text-2xl inline-block sm:h-32 h-32 font-serif">
+          “Don’t Let Yesterday Take Up Too Much Of Today.”
+        </h2>
+        <h3 id="author_list" class="h-12 sm:text-2xl mr-20 text-right font-serif">
+          – Will Rogers
+        </h3>
+        <div class="grid justify-items-center sm:mt-14 mt-16 ">
+          <button
+            onclick="newQuaote()"
+            id="button"
+            class="
+              transition
+              duration-700
+              ease-in
+              sm:w-32 sm:h-10
+              sm:rounded-x1
+              border-2 border-black
+              mb-4 bg-blue-600 text-white
+              rounded-xl w-32 font-serif
+            "
+          >
+            New Quote
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./problem2.js"></script>
+  </body>
+</html>
