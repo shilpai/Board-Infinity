@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="problem4.css">
+    <title>Problem 1</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="text-field">0</div>
+            <div class="answer">0</div>
+        </div>
+        <div class="main">
+            <table>
+                <tr>
+                    <td onclick="clearField()" colspan="2" class="ac">AC</td>
+                    <td onclick="insertVal('/')" class="ops">/</td>
+                    <td onclick="insertVal('*')" class="ops">x</td>
+                </tr>
+                <tr>
+                    <td onclick="insertVal('7')" class="nums">7</td>
+                    <td onclick="insertVal('8')" class="nums">8</td>
+                    <td onclick="insertVal('9')" class="nums">9</td>
+                    <td onclick="insertVal('-')" class="ops">-</td>
+                </tr>
+                <tr>
+                    <td onclick="insertVal('4')" class="nums">4</td>
+                    <td onclick="insertVal('5')" class="nums">5</td>
+                    <td onclick="insertVal('6')" class="nums">6</td>
+                    <td onclick="insertVal('+')" class="ops">+</td>
+                </tr>
+                <tr>
+                    <td onclick="insertVal('1')" class="nums">1</td>
+                    <td onclick="insertVal('2')" class="nums">2</td>
+                    <td onclick="insertVal('3')" class="nums">3</td>
+                    <td onclick="calculate()" class="equals" rowspan="2">=</td>
+                </tr>
+                <tr>
+                    <td onclick="insertVal('0')" colspan="2" class="nums">0</td>
+                    <td onclick="insertVal('.')" class="nums">.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="problem4.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    /* total background colour */
+    background: #333 ;            
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+    position: absolute;
+    background: #fff;
+    padding: 20px;
+    width: 450px;
+    max-width: 100%;
+    border: 10px solid black;
+  
+}
+.container h3{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.inp{
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+}
+.bg,
+.ran{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ddd;
+    
+}
+.inp input{
+    width: 100%;
+    padding: 0 5px;
+    border: 1px solid #ddd;
+    outline-color: #719ece;
+}
+.tip,
+.amt{
+    width: 100%;
+    padding: 10px;
+    background: #ddd;
+}
+.tip,.amt{
+   border-radius: 5px;
+}
