@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Problem 3</title>
+    <style>
+      .container{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding-top: 25px;
+    /* background-color: #2196F3; */
+}
+h3 {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    margin-top: 20px;
+}
+.product-image {
+    /* background-color: rgba(236, 138, 138, 0.8); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-image img {
+    border: 2px solid rgb(214, 203, 203);
+    max-height: 500px;
+    /* max-width: 1000px; */
+    /* margin-top: 30px; */
+    border-radius: 5px;
+}
+.product-content {
+    padding: 10px;
+}
+.product-category {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(133, 124, 124);
+}
+.product-rating {
+    margin-top: 15px;
+}
+.product-price ul {
+    margin-top: 15px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.product-price ul li {
+    margin-right: 8px;
+}
+.product-desc {
+    margin-top: 15px;
+}
+.product-desc p {
+    font-weight: 645;
+    font-size: 16px;
+}
+.btns {
+    display: flex;
+    margin-top: 20px;
+}
+.btn {
+    font-weight: 600;
+}
+.cart-btn {
+    margin-left: 10px
+}
+.product-price {
+    font-size: 17px;
+}
+.sale-price {
+    font-weight: 600
+}
+.actual-price {
+    font-size: 16px;
+}
+.discount {
+    font-size: 17px;
+    color: rgba(0, 128, 0, 0.781);
+    font-weight: 600;
+}
+table tr td{
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+table tr td:first-child {
+    font-weight: 650
+}
+table tr td:last-child {
+    font-weight: 600;
+    padding-left: 60px;
+}
+table {
+    margin-top: 35px;
+}
+.form-check-label {
+    margin-right: 20px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="containier">
+      <h3>Product Page</h3>
+      <div class="container">
+        <div class="product-image">
+          <img
+            src="shil.jpg"
+          />
+        </div>
+        <div class="product-content">
+          <div class="product-name"><h5>SHIL Layered Ruffle Botanical Top</h5></div>
+          <div class="product-category">Tops</div>
+          <i class="material-icons">star</i>
+                   <i class="material-icons">star</i>
+                   <i class="material-icons">star</i>
+                   <i class="material-icons">star</i>
+                   <i class="material-icons">star_half</i>
+          <div class="product-price">
+            <ul>
+              <li class="sale-price">Rs. 400</li>
+              <li class="actual-price"><strike>Rs. 800</strike></li>
+              <li class="discount">50% Off</li>
+            </ul>
+          </div>
+          <div class="product-desc">
+            <div class="product-desc">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quae
+                  modi totam debitis eum, dolorum culpa voluptates veniam provident
+                  architecto, libero minus sint repellat ratione amet blanditiis
+                  ipsa asperiores optio numquam ea nemo. Harum vero, illum ab
+                  repudiandae sunt, voluptatibus eum similique consectetur commodi,
+                  veniam amet nobis.
+                </p>
+            
+          </div>
+
+          <table>
+              <tr class="product-color">
+                  <td>Color</td>
+                  <td>Green</td>
+              </tr>
+              <tr class="product-availability">
+                <td>Availabilty</td>
+                <td>3 in stock</td>
+            </tr>
+            <tr class="product-sizes">
+                <td>Select Size:</td>
+                <td>
+                    <input class="form-check-input" type="radio" name="size" id="small">
+                    <label class="form-check-label" for="small">
+                        Small
+                    </label>
+                    <input checked="checked" class="form-check-input" type="radio" name="size" id="medium">
+                    <label class="form-check-label" for="medium">
+                        Medium
+                    </label>
+                    <input class="form-check-input" type="radio" name="size" id="large">
+                    <label class="form-check-label" for="large">
+                        Large
+                    </label>
+                </td>
+            </tr>
+            <tr class="product-quantity">
+                <td><label for="qunatity">Quantity:</label></td>
+                <td>
+                    <select name="qunatity" id="qunatity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                      </select>
+                </td>
+            </tr>
+          </table>
+
+          <div class="btns">
+            <div class="buy"><button class="btn btn-primary">Buy Now</button></div>
+            <div class="add-to-cart">
+              <button class="btn btn-outline-dark cart-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="problem3.js"></script>
+  </body>
+</html>
