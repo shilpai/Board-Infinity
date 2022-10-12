@@ -3,5 +3,11 @@
       "studentFirstName": "Shilpa",
       "collegeName": "RTMNU",
       "location": "Maharashtra"
+    },
+     {
+      "studentFirstName": "Trisha",
+      "collegeName": "IIT",
+      "location": "Gujrat"
     }
+    
   ]
