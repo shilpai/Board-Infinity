@@ -9,14 +9,15 @@ const Grocerypage = () => {
   const [my_month, setmymonth] = useState("")
 
 
-  const get_data = async () => {
-    
+  const get_data = async (e) => {
+      e.preventDefault()
       const getData = {item: title, isPurchased: false};
       await axios.post(process.env.REACT_APP_POST_API , JSON.stringify(getData), {
           headers: {
               'Content-Type': 'application/json'
           }
       })
+      fetch_data()
   }
 
   const fetch_data = async () => {
@@ -44,7 +45,7 @@ const Grocerypage = () => {
 
 
   return (
-    <form>
+    <form onSubmit={get_data}>
       <div>
         <div
           className="d-flex flex-column align-items-center card mt-5 mx-auto shadow pb-3"
@@ -60,12 +61,12 @@ const Grocerypage = () => {
           <div className="mb-3 mt-4">
             <input className="form-control fs-5" type="text" placeholder="Add shopping items" style={{ width: "500px" }} onChange={(e) => setTitle(e.target.value)} 
             />
-            <button style={{opacity: "0"}} onClick={get_data}>
+            <button style={{opacity: "0"}} >
               submit
             </button>
           </div>
           {api_data.map((api, index) => (
-          <Container_page key ={index} item={api.item} id={api._id} api={api_data}  />
+          <Container_page key ={index} item={api.item} id={api._id} api={api_data} isPurchased={api.isPurchased} fetch_data={fetch_data} />
         ))}
         
         </div>
