@@ -1,21 +1,22 @@
 import axios from "axios";
 import React, { useEffect, useState}  from "react";
 
-const Container_page = ({ item, id }) => {
-  const[cut_line, setCut_line] = useState(true)
+const Container_page = ({ item, id, isPurchased, fetch_data }) => {
+  const[cutLine, setCutLine] = useState(isPurchased)
   
 
 
 const delete_Data = async (e) => {
   e.preventDefault();
   await axios.delete( `http://localhost:3001/${id}`)
- 
+  fetch_data()
 }
 
 const update_data = async (e) => {
   e.preventDefault();
-  setCut_line(false)
+  setCutLine(true)
   await axios.put(`http://localhost:3001/${id}`)
+  fetch_data()
 }
 useEffect(() => {
   
@@ -30,7 +31,7 @@ useEffect(() => {
         >
           <div>
             <div className="p-2 mb-2" >
-            <h4 className={!cut_line  ? " text-decoration-line-through" : "text-decoration-none "  } >
+            <h4 className={cutLine  ? "text-decoration-line-through" : "text-decoration-none"  } >
           {item}
           </h4>
             </div>
